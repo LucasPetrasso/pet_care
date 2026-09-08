@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare | Agendamento Online</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <span class="logo-icon">🐾</span>
+            <div>
+                <a href="./index.html" class="logo">PetCare</a>
+                <p>Agendamento fácil para o seu pet</p>
+            </div>
+        </div>
+
+        <nav class="header-nav">
+            <a href="./agenda.html">Agenda Geral</a>
+            <a href="#agendamento" class="btn-primary">Agendar agora</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="section-tag">Cuidado que cabe na sua rotina</span>
+                <h1>Agende. Cuide. Aproveite mais tempo com seu pet.</h1>
+                <p>A PetCare facilita o agendamento de serviços para o seu pet. Escolha o atendimento, consulte horários e acompanhe tudo em um só lugar.</p>
+                <div class="hero-highlights">
+                    <span>Rápido</span>
+                    <span>Online</span>
+                    <span>Sem complicação</span>
+                </div>
+            </div>
+
+            <div class="hero-booking">
+                <div class="booking-card">
+                    <span class="booking-label">Próximo atendimento</span>
+                    <div class="booking-pet">
+                        <div class="pet-avatar">L</div>
+                        <div>
+                            <strong>Luna</strong>
+                            <span>Banho e tosa</span>
+                        </div>
+                    </div>
+
+                    <div class="booking-info">
+                        <div>
+                            <span>Data</span>
+                            <strong>15 Set</strong>
+                        </div>
+                        <div>
+                            <span>Horário</span>
+                            <strong>14:30</strong>
+                        </div>
+                        <div>
+                            <span>Status</span>
+                            <strong class="status-confirmed">Confirmado</strong>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="availability-card">
+                <span>Horários disponíveis hoje</span>
+                <div class="available-times">
+                    <button type="button">13:30</button>
+                    <button type="button">15:00</button>
+                    <button type="button">16:30</button>
+                </div>
+            </div>
+
+                <a href="#agendamento" class="btn-primary">Agendar atendimento</a>
+            </div>
+
+            <div class="hero-decoration">
+                <span>🐾</span>
+            </div>
+        </section>
+
+        <section class="appointment" id="agendamento">
+            <div class="appointment-intro">
+                <span class="section-tag">Novo agendamento</span>
+                <h2>Vamos cuidar do seu melhor amigo?</h2>
+                <p>Conte para a gente o que seu pet precisa e escolha o melhor momento para o atendimento.</p>
+            </div>
+
+            <form id="appointment-form" class="appointment-form">
+                <fieldset>
+                    <legend>Atendimento</legend>
+
+                    <div class="form-group form-service">
+                        <label for="service">Qual serviço seu pet precisa?</label>
+                        <select id="service" name="service" required>
+                            <option value="">Selecione um serviço</option>
+                            <option value="banho">Banho</option>
+                            <option value="tosa">Tosa</option>
+                            <option value="banho-tosa">Banho e tosa</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Data</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Horário</label>
+                            <select id="time" name="time" required>
+                                <option value="">Selecione</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tutor & Pet</legend>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tutor-name">Seu nome</label>
+                            <input type="text" id="tutor-name" name="tutorName" placeholder="Nome do tutor" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pet-name">Nome do pet</label>
+                            <input type="text" id="pet-name" name="petName" placeholder="Nome do pet" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefone para contato</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required>
+                    </div>
+                </fieldset>
+
+                <div class="form-footer">
+                    <p>Você poderá acompanhar o status pela Agenda Geral.</p>
+                    <button type="submit" class="btn-primary">Confirmar agendamento</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="benefits">
+            <div class="section-header">
+                <span class="section-tag">Por que escolher a PetCare?</span>
+                <h2>Menos tempo organizando. Mais tempo cuidando.</h2>
+                <p>Uma experiência simples para quem quer cuidar do pet sem complicação.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <article class="benefit-card benefit-card-featured">
+                    <div class="benefit-content">
+                        <span class="benefit-number">01</span>
+                        <h3>Agendamento sem enrolação</h3>
+                        <p>Escolha o serviço, a data e o horário em poucos passos, sem precisar ligar ou trocar mensagens.</p>
+                    </div>
+                    <img src="./assets/images/benefit-schedule.jpg" alt="Pessoa realizando um agendamento para seu pet">
+                </article>
+
+                <article class="benefit-card">
+                    <span class="benefit-number">02</span>
+                    <h3>Horários organizados</h3>
+                    <p>Visualize opções disponíveis e encontre o melhor momento para o atendimento.</p>
+                </article>
+
+                <article class="benefit-card benefit-card-accent">
+                    <span class="benefit-number">03</span>
+                    <h3>Acompanhe tudo</h3>
+                    <p>Consulte o status dos agendamentos pela Agenda Geral sempre que precisar.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="testimonials-intro">
+                <span class="section-tag">Quem já usa</span>
+                <h2>Histórias de quem ganhou mais praticidade na rotina.</h2>
+            </div>
+
+            <div class="testimonials-list">
+                <article class="testimonial-card">
+                    <p>"Consegui escolher o horário da Mel em poucos minutos. Muito mais simples do que ficar tentando contato pelo telefone."</p>
+                    <div class="testimonial-author">
+                        <span>Mariana</span>
+                        <small>Tutora da Mel</small>
+                    </div>
+                </article>
+
+                <article class="testimonial-card testimonial-offset">
+                    <p>"Gostei principalmente de poder conferir o status do atendimento depois do agendamento."</p>
+                    <div class="testimonial-author">
+                        <span>Rafael</span>
+                        <small>Tutor do Thor</small>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <p>"A experiência é rápida e direta. Em poucos passos já estava tudo organizado para a Luna."</p>
+                    <div class="testimonial-author">
+                        <span>Camila</span>
+                        <small>Tutora da Luna</small>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

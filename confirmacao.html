@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare | Agendamento Confirmado</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <span class="logo-icon">🐾</span>
+            <div>
+                <a href="./index.html" class="logo">PetCare</a>
+                <p>Agendamento fácil para o seu pet</p>
+            </div>
+        </div>
+
+        <nav class="header-nav">
+            <a href="./agenda.html">Agenda Geral</a>
+            <a href="./index.html#agendamento" class="btn-primary">Novo agendamento</a>
+        </nav>
+    </header>
+
+    <main class="confirmation-page">
+        <section class="confirmation">
+            <div class="confirmation-message">
+                <div class="success-icon">✓</div>
+
+                <span class="section-tag">Agendamento recebido</span>
+                <h1>Obrigado por cuidar tão bem de quem sempre está ao seu lado.</h1>
+
+                <p class="confirmation-description">
+                    Seu agendamento foi registrado com sucesso. Nossa equipe entrará em contato para confirmar os detalhes do atendimento.
+                </p>
+
+                <div class="confirmation-actions">
+                    <a href="./index.html" class="btn-secondary">Voltar para o início</a>
+                    <a href="./agenda.html" class="btn-primary">Ver Agenda Geral</a>
+                </div>
+            </div>
+
+            <div class="confirmation-summary">
+                <div class="confirmation-image">
+                    <img src="./assets/images/confirmation-pet.jpg" alt="Pet sendo cuidado em um ambiente acolhedor">
+                    <span>Seu pet está em boas mãos.</span>
+                </div>
+
+                <article class="appointment-summary-card">
+                    <div class="summary-header">
+                        <div>
+                            <span>Resumo do agendamento</span>
+                            <h2 id="summary-pet">Luna</h2>
+                        </div>
+
+                        <span class="summary-status">Em análise</span>
+                    </div>
+
+                    <div class="summary-service">
+                        <span>Serviço</span>
+                        <strong id="summary-service">Banho e tosa</strong>
+                    </div>
+
+                    <div class="summary-grid">
+                        <div>
+                            <span>Data</span>
+                            <strong id="summary-date">15/09/2026</strong>
+                        </div>
+
+                        <div>
+                            <span>Horário</span>
+                            <strong id="summary-time">14:30</strong>
+                        </div>
+
+                        <div>
+                            <span>Tutor</span>
+                            <strong id="summary-tutor">Lucas</strong>
+                        </div>
+
+                        <div>
+                            <span>Telefone</span>
+                            <strong id="summary-phone">(11) 99999-9999</strong>
+                        </div>
+                    </div>
+
+                    <div class="summary-footer">
+                        <span>PetCare</span>
+                        <small>Agendamento online</small>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
