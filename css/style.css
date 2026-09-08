@@ -682,7 +682,6 @@ main {
     max-width: 680px;
     padding: 2rem;
     background-color: var(--color-background);
-    border-left: 4px solid var(--color-primary);
     border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
 }
 
@@ -910,3 +909,292 @@ main {
 }
 
 /* AGENDA */
+
+.dashboard-page {
+    padding-top: 80px;
+    background-color: var(--color-background);
+}
+
+.dashboard-hero {
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 3rem;
+}
+
+.dashboard-heading {
+    max-width: 700px;
+}
+
+.dashboard-heading h1 {
+    margin: 0.6rem 0 1rem;
+    font-size: clamp(3rem, 5vw, 5rem);
+    letter-spacing: -0.05em;
+}
+
+.dashboard-heading p {
+    max-width: 560px;
+}
+
+.dashboard-date {
+    max-width: 280px;
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.dashboard-date span {
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+}
+
+.dashboard-date strong {
+    color: var(--color-secondary);
+    font-size: 1rem;
+}
+
+.dashboard-stats {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1.25fr repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.stat-card {
+    min-height: 180px;
+    padding: 1.5rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stat-card > span {
+    color: var(--color-text-light);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.stat-card strong {
+    color: var(--color-secondary);
+    font-size: 2.8rem;
+    line-height: 1;
+}
+
+.stat-card small {
+    color: var(--color-text-light);
+}
+
+.stat-card-main {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+}
+
+.stat-card-main > span,
+.stat-card-main small {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.stat-card-main strong {
+    color: var(--color-surface);
+    font-size: 3.4rem;
+}
+
+.appointments-panel {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    background-color: var(--color-surface);
+}
+
+.appointments-panel-header {
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.appointments-panel-header h2 {
+    margin-top: 0.5rem;
+}
+
+.appointments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.appointment-item {
+    padding: 1.4rem;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    display: grid;
+    grid-template-columns: 90px 1.4fr 1fr auto auto;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.appointment-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+    border-color: rgba(42, 157, 143, 0.3);
+}
+
+.appointment-date {
+    padding-right: 1.5rem;
+    border-right: 1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: baseline;
+    column-gap: 0.3rem;
+}
+
+.appointment-date > span {
+    color: var(--color-secondary);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.appointment-date small {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.appointment-date strong {
+    grid-column: 1 / 3;
+    margin-top: 0.4rem;
+    color: var(--color-text-light);
+    font-size: 0.85rem;
+}
+
+.appointment-main {
+    min-width: 0;
+}
+
+.appointment-service {
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.appointment-main h3 {
+    margin: 0.2rem 0;
+}
+
+.appointment-main p {
+    font-size: 0.85rem;
+}
+
+.appointment-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.appointment-contact span {
+    color: var(--color-text-light);
+    font-size: 0.75rem;
+}
+
+.appointment-contact strong {
+    color: var(--color-secondary);
+    font-size: 0.85rem;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.status-pending {
+    background-color: rgba(233, 162, 59, 0.12);
+    color: var(--color-warning);
+}
+
+.status-confirmed {
+    background-color: rgba(46, 157, 103, 0.12);
+    color: var(--color-success);
+}
+
+.status-cancelled {
+    background-color: rgba(217, 83, 79, 0.12);
+    color: var(--color-danger);
+}
+
+.appointment-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-button {
+    padding: 0.55rem 0.75rem;
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: border-color var(--transition), color var(--transition), background-color var(--transition);
+}
+
+.action-confirm:hover {
+    color: var(--color-success);
+    border-color: var(--color-success);
+    background-color: rgba(46, 157, 103, 0.06);
+}
+
+.action-cancel:hover {
+    color: var(--color-danger);
+    border-color: var(--color-danger);
+    background-color: rgba(217, 83, 79, 0.06);
+}
+
+.action-remove:hover {
+    color: var(--color-danger);
+    border-color: var(--color-danger);
+}
+
+.empty-state {
+    display: none;
+    min-height: 360px;
+    padding: 4rem 2rem;
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.empty-state-icon {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    opacity: 0.4;
+}
+
+.empty-state h3 {
+    margin-bottom: 0.6rem;
+}
+
+.empty-state p {
+    max-width: 420px;
+    margin-bottom: 1.5rem;
+}
