@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare | Agenda Geral</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <span class="logo-icon">🐾</span>
+            <div>
+                <a href="./index.html" class="logo">PetCare</a>
+                <p>Agendamento fácil para o seu pet</p>
+            </div>
+        </div>
+
+        <nav class="header-nav">
+            <a href="./index.html">Página inicial</a>
+            <a href="./index.html#agendamento" class="btn-primary">Novo agendamento</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-page">
+        <section class="dashboard-hero">
+            <div class="dashboard-heading">
+                <span class="section-tag">Painel de controle</span>
+                <h1>Agenda Geral</h1>
+                <p>Acompanhe os atendimentos, atualize os status e mantenha a rotina organizada.</p>
+            </div>
+
+            <div class="dashboard-date">
+                <span>Visão geral</span>
+                <strong>Seus agendamentos em um só lugar</strong>
+            </div>
+        </section>
+
+        <section class="dashboard-stats">
+            <article class="stat-card stat-card-main">
+                <span>Total de agendamentos</span>
+                <strong id="stat-total">0</strong>
+                <small>Todos os registros</small>
+            </article>
+
+            <article class="stat-card">
+                <span>Em análise</span>
+                <strong id="stat-pending">0</strong>
+                <small>Aguardando confirmação</small>
+            </article>
+
+            <article class="stat-card">
+                <span>Confirmados</span>
+                <strong id="stat-confirmed">0</strong>
+                <small>Atendimentos aprovados</small>
+            </article>
+
+            <article class="stat-card">
+                <span>Cancelados</span>
+                <strong id="stat-cancelled">0</strong>
+                <small>Registros cancelados</small>
+            </article>
+        </section>
+
+        <section class="appointments-panel">
+            <div class="appointments-panel-header">
+                <div>
+                    <span class="section-tag">Atendimentos</span>
+                    <h2>Próximos agendamentos</h2>
+                </div>
+
+                <a href="./index.html#agendamento" class="btn-secondary">Criar novo</a>
+            </div>
+
+            <div id="appointments-list" class="appointments-list">
+                <article class="appointment-item">
+                    <div class="appointment-date">
+                        <span>15</span>
+                        <small>SET</small>
+                        <strong>14:30</strong>
+                    </div>
+
+                    <div class="appointment-main">
+                        <span class="appointment-service">Banho e tosa</span>
+                        <h3>Luna</h3>
+                        <p>Tutora: Mariana</p>
+                    </div>
+
+                    <div class="appointment-contact">
+                        <span>Contato</span>
+                        <strong>(11) 99999-9999</strong>
+                    </div>
+
+                    <div class="appointment-status">
+                        <span class="status-badge status-pending">Em análise</span>
+                    </div>
+
+                    <div class="appointment-actions">
+                        <button type="button" class="action-button action-confirm">Confirmar</button>
+                        <button type="button" class="action-button action-cancel">Cancelar</button>
+                    </div>
+                </article>
+            </div>
+
+            <div id="empty-state" class="empty-state">
+                <span class="empty-state-icon">🐾</span>
+                <h3>Nenhum agendamento por aqui.</h3>
+                <p>Quando um atendimento for criado, ele aparecerá nesta agenda.</p>
+                <a href="./index.html#agendamento" class="btn-primary">Criar primeiro agendamento</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
