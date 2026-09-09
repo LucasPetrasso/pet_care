@@ -1,0 +1,40 @@
+<svg width="420" height="120" viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">PetCare</title>
+  <desc id="desc">Logo PetCare com ícone de pata e coração em tons de verde teal.</desc>
+
+  <g transform="translate(8 8)">
+    <rect x="0" y="0" width="104" height="104" rx="28" fill="#2A9D8F"/>
+
+    <ellipse cx="34" cy="35" rx="10" ry="14" transform="rotate(-28 34 35)" fill="#FFFFFF"/>
+    <ellipse cx="52" cy="27" rx="10" ry="14" fill="#FFFFFF"/>
+    <ellipse cx="70" cy="35" rx="10" ry="14" transform="rotate(28 70 35)" fill="#FFFFFF"/>
+
+    <path d="M52 83
+             C45 76 30 66 30 54
+             C30 44 37 38 45 38
+             C50 38 54 41 56 45
+             C58 41 62 38 67 38
+             C75 38 82 44 82 54
+             C82 66 67 76 60 83
+             C57 86 55 88 52 90
+             C49 88 47 86 44 83Z"
+          fill="#FFFFFF"/>
+  </g>
+
+  <text x="138" y="72"
+        font-family="Inter, Arial, sans-serif"
+        font-size="54"
+        font-weight="700"
+        letter-spacing="-1.5">
+    <tspan fill="#264653">Pet</tspan><tspan fill="#2A9D8F">Care</tspan>
+  </text>
+
+  <text x="141" y="94"
+        font-family="Inter, Arial, sans-serif"
+        font-size="14"
+        font-weight="500"
+        letter-spacing="0.4"
+        fill="#66757F">
+    cuidado simples, rotina mais leve
+  </text>
+</svg>
